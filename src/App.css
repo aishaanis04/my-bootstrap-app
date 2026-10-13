@@ -1,0 +1,250 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  margin: 10px;
+}
+
+/* Let the links use the space between the brand and search */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+
+}
+
+/* Push the dropdown to the right end of the links */
+.navbar-nav .dropdown {
+  margin-left: auto;
+}
+
+/* Keep the search input and button side by side */
+.navbar form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+}
+
+/* Optional: set a comfortable search field width */
+.navbar form input {
+  width: 190px;
+}
+
+.breadcrumb-box {
+  background-color: #222;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.breadcrumb-box .breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-box .breadcrumb-item,
+.breadcrumb-box .breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-box .breadcrumb-item a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb-box .breadcrumb-item a:hover {
+  color: white;
+}
+
+/* Make Bootstrap's separators light on the dark background */
+.breadcrumb-box .breadcrumb-item + .breadcrumb-item::before {
+  color: #aaa;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  border-bottom: 1px solid #222;
+}
+
+.page-heading h1 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.btn-btn-primary{
+    margin:10px;
+    background: lightgreen;
+}
+
+.card-img-top {
+  height: 90px;
+  object-fit: cover;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 12px;
+  width: max-content;
+  margin: 30px auto;
+  max-width: calc(100%-24px);
+}
+
+.card-img-top {
+  height: 90px;
+  object-fit: cover;
+  background-color: #d1d1d3;
+}
+
+.card-body {
+  padding: 12px;
+
+}
+
+.student-card h2 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.student-card p {
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .card-group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .card-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+.student-card {
+  border: 0;
+  box-shadow: none;
+}
+.delete-btn {
+  margin-top: 8px;
+  padding: 4px 10px;
+  color: #c6535c;
+  background: white;
+  border: 1px solid #c6535c;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.delete-btn:hover {
+  color: white;
+  background: #c6535c;
+}
+.profile-btn {
+  margin-top: 8px;
+  padding: 4px 10px;
+  color: green;
+  background: white;
+  border: 1px solid green;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  color: white;
+  background: green;
+}
+
+.showDetails {
+  margin-top: 8px;
+  padding: 4px 10px;
+  color: green;
+  background: white;
+  border: 1px solid green;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.showDetails:hover {
+  color: white;
+  background: green;
+}
+.Pagination{
+  justify-content: center;
+}
+
+.alert-info {
+  max-width: 810px;
+  margin: 12px auto;
+  padding: 12px 16px;
+  color: #35616b;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alert-info .btn-close {
+  padding: 14px;
+}
+
+.student-footer {
+  background: #252629;
+  color: white;
+  padding: 20px 0 0;
+}
+
+.footer-columns {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.footer-columns h5 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.footer-columns a,
+.footer-columns p {
+  display: block;
+  margin: 3px 0;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  border-top: 1px solid #414246;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-columns a{
+  color: green;
+
+}
