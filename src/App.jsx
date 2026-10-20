@@ -11,10 +11,36 @@ import StudentCard from './Components/StudentCard.jsx'
 import Pagination from './Components/Pagination.jsx'
 import Alert from './Components/Alert.jsx'
 import Footer from './Components/Footer.jsx'
+import { browser, Router, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
+     <browserRouter>
+     <Routes>
+         <Route  
+            path = "/"
+            element={<Home/>}
+         />
+
+         <Route
+           path ="/students"
+           element={<Students/>}
+         />
+          
+           <Route
+           path ="/courses"
+           element={<Courses/>}
+         />
+
+          <Route
+           path ="/students/:id"
+           element={<StudentProfile/>}
+         />
+  </Routes>
+              
+        
+     </browserRouter>
     <Navbar/>
     <BreadCrumbs/>
     <Header/>
@@ -23,7 +49,7 @@ function App() {
     <Alert/>
     <Footer/>
     </>
-  )
+  ) 
 }
 
 export default App
